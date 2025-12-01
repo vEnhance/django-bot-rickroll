@@ -1,11 +1,8 @@
-"""pytest configuration for bot-rickroll tests."""
-
 import django
 from django.conf import settings
 
 
 def pytest_configure():
-    """Configure Django settings for tests."""
     settings.configure(
         DEBUG=True,
         DATABASES={

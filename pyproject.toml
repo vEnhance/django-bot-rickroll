@@ -42,3 +42,6 @@ dev = [
 [project.urls]
 Homepage = "https://github.com/vEnhance/django-bot-rickroll"
 Repository = "https://github.com/vEnhance/django-bot-rickroll"
+
+[tool.uv.build-backend]
+module-name = "bot_rickroll"

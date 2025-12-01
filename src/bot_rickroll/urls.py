@@ -1,9 +1,4 @@
-"""URL patterns for bot-rickroll.
-
-This module defines URL patterns that catch common bot/scanner requests
-and redirect them to the rickroll URL.
-
-Include these patterns at the END of your urlpatterns to catch requests
+"""Include these patterns at the END of your urlpatterns to catch requests
 that don't match your actual application routes.
 """
 

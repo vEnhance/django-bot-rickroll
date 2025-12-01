@@ -1,5 +1,3 @@
-"""Settings for bot-rickroll."""
-
 from django.conf import settings
 
 DEFAULT_RICKROLL_URL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"

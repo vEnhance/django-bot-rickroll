@@ -1,5 +1,3 @@
-"""Tests for bot-rickroll URL patterns."""
-
 import pytest
 from django.test import Client
 
@@ -8,7 +6,6 @@ from bot_rickroll.settings import DEFAULT_RICKROLL_URL
 
 @pytest.fixture
 def client():
-    """Return a Django test client."""
     return Client()
 
 
