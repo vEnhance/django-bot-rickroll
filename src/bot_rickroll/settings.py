@@ -1,4 +1,4 @@
-"""Settings for django-bot-rickroll."""
+"""Settings for bot-rickroll."""
 
 from django.conf import settings
 

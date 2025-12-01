@@ -1,4 +1,4 @@
-"""pytest configuration for django-bot-rickroll tests."""
+"""pytest configuration for bot-rickroll tests."""
 
 import django
 from django.conf import settings

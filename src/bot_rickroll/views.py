@@ -1,4 +1,4 @@
-"""Views for django-bot-rickroll."""
+"""Views for bot-rickroll."""
 
 from django.views.generic import RedirectView
 

@@ -17,14 +17,14 @@ uv add django-bot-rickroll
 
 ## Usage
 
-Add `django_bot_rickroll` to `INSTALLED_APPS` and then to `urlpatterns`:
+Add `bot_rickroll` to `INSTALLED_APPS` and then to `urlpatterns`:
 
 ```python
 from django.urls import path, include
 
 urlpatterns = [
     # Your app URLs first ...
-    path("", include("django_bot_rickroll.urls")),
+    path("", include("bot_rickroll.urls")),
 ]
 ```
 

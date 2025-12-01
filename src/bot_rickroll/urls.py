@@ -1,4 +1,4 @@
-"""URL patterns for django-bot-rickroll.
+"""URL patterns for bot-rickroll.
 
 This module defines URL patterns that catch common bot/scanner requests
 and redirect them to the rickroll URL.
