@@ -3,7 +3,7 @@ requires = ["uv_build"]
 build-backend = "uv_build"
 
 [project]
-name = "django-rickroll"
+name = "django-bot-rickroll"
 version = "0.1.0"
 description = "Django plugin that rickrolls bots and scanners by redirecting common malicious URLs"
 readme = "README.md"
@@ -40,5 +40,5 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/vEnhance/django-rickroll"
-Repository = "https://github.com/vEnhance/django-rickroll"
+Homepage = "https://github.com/vEnhance/django-bot-rickroll"
+Repository = "https://github.com/vEnhance/django-bot-rickroll"

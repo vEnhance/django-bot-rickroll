@@ -1,4 +1,4 @@
-# django-rickroll
+# django-bot-rickroll
 
 ## Story
 
@@ -12,19 +12,19 @@ Also it means if my kids are snooping around they can get a laugh or two.
 ## Installation
 
 ```bash
-uv add django-rickroll
+uv add django-bot-rickroll
 ```
 
 ## Usage
 
-Add `django_rickroll` to `INSTALLED_APPS` and then to `urlpatterns`:
+Add `django_bot_rickroll` to `INSTALLED_APPS` and then to `urlpatterns`:
 
 ```python
 from django.urls import path, include
 
 urlpatterns = [
     # Your app URLs first ...
-    path("", include("django_rickroll.urls")),
+    path("", include("django_bot_rickroll.urls")),
 ]
 ```
 

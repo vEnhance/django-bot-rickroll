@@ -1,9 +1,9 @@
-"""Tests for django-rickroll URL patterns."""
+"""Tests for django-bot-rickroll URL patterns."""
 
 import pytest
 from django.test import Client
 
-from django_rickroll.settings import DEFAULT_RICKROLL_URL
+from django_bot_rickroll.settings import DEFAULT_RICKROLL_URL
 
 
 @pytest.fixture
