@@ -17,7 +17,7 @@ uv add django-bot-rickroll
 
 ## Usage
 
-Add `bot_rickroll` to `INSTALLED_APPS` and then to `urlpatterns`:
+Just add one line to `urlpatterns`:
 
 ```python
 from django.urls import path, include
@@ -27,6 +27,10 @@ urlpatterns = [
     path("", include("bot_rickroll.urls")),
 ]
 ```
+
+You should add this as the last line, so that in the unlikely event
+one of the URL's in the blocklist is actually supposed to work,
+then yours take precedence.
 
 You can customize the target URL in your `settings.py`:
 
