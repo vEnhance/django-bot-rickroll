@@ -134,6 +134,25 @@ class TestUploadPaths:
         assert response.url == DEFAULT_RICKROLL_URL
 
 
+class TestBlogPaths:
+    """Test blog-related paths are rickrolled."""
+
+    @pytest.mark.parametrize(
+        "path",
+        [
+            "/wlwmanifest.xml",
+            "/blog/wlwmanifest.xml",
+            "/wordpress/wlwmanifest.xml",
+            "/blog-verify",
+        ],
+    )
+    def test_blog_paths_redirect(self, client, path):
+        """Blog-related paths should redirect to rickroll URL."""
+        response = client.get(path)
+        assert response.status_code == 302
+        assert response.url == DEFAULT_RICKROLL_URL
+
+
 class TestCustomRickrollUrl:
     """Test custom rickroll URL configuration."""
 

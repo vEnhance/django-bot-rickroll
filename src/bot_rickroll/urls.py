@@ -100,7 +100,10 @@ urlpatterns.extend(
         path(".env", _view),
         path(".htaccess", _view),
         path(".htpasswd", _view),
+        path("blog-verify", _view),
         # Catch-all for any .php file
         re_path(r"^.*\.php$", _view),
+        # Catch-all for any wlwmanifest.xml file
+        re_path(r"^.*wlwmanifest\.xml$", _view),
     ]
 )
