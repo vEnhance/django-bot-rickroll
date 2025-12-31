@@ -4,7 +4,7 @@ build-backend = "uv_build"
 
 [project]
 name = "django-bot-rickroll"
-version = "0.2.1"
+version = "0.3.0"
 description = "Django plugin that rickrolls bots and scanners by redirecting common malicious URLs"
 readme = "README.md"
 requires-python = ">=3.11"
