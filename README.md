@@ -58,6 +58,8 @@ RICKROLL_URL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 - `/php/`
 - `/db/`, `/database/`, `/sql/`
 - Any URL ending in `.php`
+- `/blog-verify`
+- Any URL ending in `wlwmanifest.xml`
 
 ## License
 
