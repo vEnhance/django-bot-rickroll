@@ -86,6 +86,12 @@ _PREFIXES = [
     "db",
     "database",
     "sql",
+    # Config paths
+    "etc",
+    "sling",
+    "web.config",
+    "webdav",
+    "windows",
 ]
 
 # Build urlpatterns from prefixes
@@ -101,6 +107,9 @@ urlpatterns.extend(
         path(".htaccess", _view),
         path(".htpasswd", _view),
         path("blog-verify", _view),
+        path("package.json", _view),
+        path("package-lock.json", _view),
+        path("boot.ini", _view),
         # Catch-all for any .php file
         re_path(r"^.*\.php$", _view),
         # Catch-all for any wlwmanifest.xml file
