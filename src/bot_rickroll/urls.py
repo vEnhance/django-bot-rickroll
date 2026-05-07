@@ -110,6 +110,8 @@ urlpatterns.extend(
         path("package.json", _view),
         path("package-lock.json", _view),
         path("boot.ini", _view),
+        # Catch-all for any .env file
+        re_path(r"^.*\.env$", _view),
         # Catch-all for any .php file
         re_path(r"^.*\.php$", _view),
         # Catch-all for any wlwmanifest.xml file

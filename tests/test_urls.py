@@ -134,6 +134,24 @@ class TestUploadPaths:
         assert response.url == DEFAULT_RICKROLL_URL
 
 
+class TestEnvPaths:
+    """Test .env file paths are rickrolled."""
+
+    @pytest.mark.parametrize(
+        "path",
+        [
+            "/.env",
+            "/app/.env",
+            "/deeply/nested/.env",
+        ],
+    )
+    def test_env_paths_redirect(self, client, path):
+        """.env file paths should redirect to rickroll URL."""
+        response = client.get(path)
+        assert response.status_code == 302
+        assert response.url == DEFAULT_RICKROLL_URL
+
+
 class TestBlogPaths:
     """Test blog-related paths are rickrolled."""
 
